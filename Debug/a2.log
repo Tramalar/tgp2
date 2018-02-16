@@ -1,52 +1,19 @@
-﻿Build started 13.2.2018 9:56:02.
+﻿Build started 16.2.2018 16:31:13.
      1>Project "C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\a2.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\a2.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /Ivecmath/include /Zi /nologo /W3 /WX- /Od /Oy- /D SOLN /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt bitmap.cpp Joint.cpp main.cpp MatrixStack.cpp Mesh.cpp modelerapp.cpp modelerui.cpp ModelerView.cpp SkeletalModel.cpp vecmath\src\Matrix2f.cpp vecmath\src\Matrix3f.cpp vecmath\src\Matrix4f.cpp vecmath\src\Quat4f.cpp vecmath\src\Vector2f.cpp vecmath\src\Vector3f.cpp vecmath\src\Vector4f.cpp
-         Vector4f.cpp
-         Vector3f.cpp
-         Vector2f.cpp
-         Quat4f.cpp
-         Matrix4f.cpp
-         Matrix3f.cpp
-         Matrix2f.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I. /Ivecmath/include /Zi /nologo /W3 /WX- /Od /Oy- /D SOLN /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SkeletalModel.cpp
          SkeletalModel.cpp
-         ModelerView.cpp
-         modelerui.cpp
-     1>modelerui.cpp(69): warning C4018: '>=' : signed/unsigned mismatch
-     1>modelerui.cpp(89): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>modelerui.cpp(94): warning C4018: '<' : signed/unsigned mismatch
-     1>modelerui.cpp(91): warning C4101: 'azimuth' : unreferenced local variable
-     1>modelerui.cpp(91): warning C4101: 'dolly' : unreferenced local variable
-     1>modelerui.cpp(91): warning C4101: 'twist' : unreferenced local variable
-     1>modelerui.cpp(91): warning C4101: 'elevation' : unreferenced local variable
-         modelerapp.cpp
-     1>modelerapp.cpp(41): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(188) : see declaration of 'strncpy'
-         Mesh.cpp
-         MatrixStack.cpp
-         main.cpp
-     1>main.cpp(49): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>main.cpp(51): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-     1>main.cpp(53): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
-         Joint.cpp
-         bitmap.cpp
-     1>bitmap.cpp(22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-     1>bitmap.cpp(127): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
-         Generating Code...
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Ivecmath\include /Zi /nologo /W3 /WX- /Od /Oy- /D SOLN /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt camera.cpp
-         camera.cpp
-     1>camera.cpp(136): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>camera.cpp(137): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SkeletalModel.cpp(79): warning C4018: '<' : signed/unsigned mismatch
+     1>SkeletalModel.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+     1>SkeletalModel.cpp(110): warning C4018: '<' : signed/unsigned mismatch
+     1>SkeletalModel.cpp(122): warning C4018: '<' : signed/unsigned mismatch
+     1>SkeletalModel.cpp(133): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>SkeletalModel.cpp(133): warning C4305: 'argument' : truncation from 'double' to 'float'
+         All outputs are up-to-date.
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\a2.exe.embed.manifest.res" Debug\a2_manifest.rc 
+         All outputs are up-to-date.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.exe" /INCREMENTAL /NOLOGO fltkgl.lib fltk.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\a2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.lib" /MACHINE:X86 Debug\a2.exe.embed.manifest.res
          Debug\bitmap.obj
@@ -66,224 +33,11 @@
          Debug\Vector2f.obj
          Debug\Vector3f.obj
          Debug\Vector4f.obj
-     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-     1>fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(gl_draw.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(case.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_absolute.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_expand.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_isdir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_list.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_match.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_abort.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_arc.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_arci.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_ask.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Bitmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Box.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_boxtype.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Browser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Browser_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Check_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Choice.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_color.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_compose.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_cursor.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_curve.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Device.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_dnd.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Double_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw_pixmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Browser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Chooser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Chooser2.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_file_dir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Icon.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Input.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_font.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_get_system_colors.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_grab.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Group.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_gtk.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Input.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Input_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_labeltype.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Light_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_line_style.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_lock.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_add.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Bar.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Native_File_Chooser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Pack.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Paged_Device.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Pixmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_plastic.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Preferences.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Printer.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_read_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_rect.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Return_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_round_box.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Scroll.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_scroll_area.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Scrollbar.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Shared_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_shortcut.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Single_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Slider.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_symbols.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tile.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tiled_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tooltip.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_utf.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_utf8.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Valuator.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Value_Slider.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_vertex.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_visual.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Widget.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Window_hotspot.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_XBM_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_XPM_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(flstring.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(is_spacing.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(numericsort.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(ps_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(scandir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(screen_xywh.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(vsnprintf.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\a2.exe.embed.manifest" /manifest Debug\a2.exe.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\a2.exe.embed.manifest.res" Debug\a2_manifest.rc 
+         All outputs are up-to-date.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.exe" /INCREMENTAL /NOLOGO fltkgl.lib fltk.lib freeglut.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\a2.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.lib" /MACHINE:X86 Debug\a2.exe.embed.manifest.res
-         Debug\bitmap.obj
-         Debug\camera.obj
-         Debug\Joint.obj
-         Debug\main.obj
-         Debug\MatrixStack.obj
-         Debug\Mesh.obj
-         Debug\modelerapp.obj
-         Debug\modelerui.obj
-         Debug\ModelerView.obj
-         Debug\SkeletalModel.obj
-         Debug\Matrix2f.obj
-         Debug\Matrix3f.obj
-         Debug\Matrix4f.obj
-         Debug\Quat4f.obj
-         Debug\Vector2f.obj
-         Debug\Vector3f.obj
-         Debug\Vector4f.obj
-     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-     1>fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltkgl.lib(gl_draw.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(case.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_absolute.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_expand.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_isdir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_list.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(filename_match.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_abort.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_arc.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_arci.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_ask.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Bitmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Box.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_boxtype.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Browser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Browser_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Check_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Choice.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_color.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_compose.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_cursor.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_curve.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Device.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_dnd.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Double_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_draw_pixmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Browser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Chooser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Chooser2.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_file_dir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Icon.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_File_Input.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_font.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_get_system_colors.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_grab.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Group.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_gtk.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Input.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Input_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_labeltype.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Light_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_line_style.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_lock.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_add.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Bar.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Menu_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Native_File_Chooser.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Pack.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Paged_Device.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Pixmap.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_plastic.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Preferences.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Printer.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_read_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_rect.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Return_Button.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_round_box.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Scroll.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_scroll_area.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Scrollbar.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Shared_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_shortcut.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Single_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Slider.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_symbols.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tile.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tiled_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Tooltip.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_utf.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_utf8.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Valuator.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Value_Slider.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(fl_vertex.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_visual.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Widget.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Window.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_Window_hotspot.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_XBM_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(Fl_XPM_Image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(flstring.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(is_spacing.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(numericsort.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(ps_image.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(scandir.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(screen_xywh.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
-     1>fltk.lib(vsnprintf.obj) : warning LNK4204: 'C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         All outputs are up-to-date.
          a2.vcxproj -> C:\Users\Business Time\Documents\2.1.Kurssit\TGP\two\distrib\Debug\a2.exe
        FinalizeBuildStatus:
          Deleting file "Debug\a2.unsuccessfulbuild".
@@ -292,4 +46,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:11.73
+Time Elapsed 00:00:01.24

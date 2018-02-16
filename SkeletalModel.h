@@ -44,9 +44,11 @@ public:
 
 	// 1.1. Implement this method with a recursive helper to draw a sphere at each joint.
 	void drawJoints( );
+	void recuJoints( Joint *joint);
 
 	// 1.2. Implement this method a recursive helper to draw a box between each pair of joints
 	void drawSkeleton( );
+	void recuBones(Joint *joint);
 
 	// 1.3. Implement this method to handle changes to your skeleton given
 	// changes in the slider values
@@ -75,6 +77,7 @@ private:
 
 	// pointer to the root joint
 	Joint* m_rootJoint;
+	std::vector<float> m_addRoots;
 	// the list of joints.
 	std::vector< Joint* > m_joints;
 
