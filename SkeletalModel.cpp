@@ -52,14 +52,20 @@ void SkeletalModel::loadSkeleton( const char* filename )
 		ss>>pos[0]>>pos[1]>>pos[2]>>par;
 		Joint *joint=new Joint();
 		joint->transform=Matrix4f::translation(pos);
-		m_joints.push_back(joint);
 		if(par==-1) 
 			m_rootJoint=joint;
 		else 
 			m_joints[par]->children.push_back(joint);
+		m_joints.push_back(joint);
 	}
-	m_addRoots.push_back(.5);	
-	m_addRoots.push_back(-.5);
+	m_addRoots.push_back(Vector3f(0,0,.5));	
+	m_addRoots.push_back(Vector3f(0,0,-.5));
+	m_addRoots.push_back(Vector3f(.5,0,0));	
+	m_addRoots.push_back(Vector3f(-.5,0,0));
+	m_addRoots.push_back(Vector3f(.5,0,.5));	
+	m_addRoots.push_back(Vector3f(-.5,0,.5));
+	m_addRoots.push_back(Vector3f(.5,0,-.5));	
+	m_addRoots.push_back(Vector3f(-.5,0,-.5));
 	// Load the skeleton from file here.
 }
 
@@ -78,7 +84,9 @@ void SkeletalModel::drawJoints( )
 
 	for(int i=0;i<m_addRoots.size();i++){
 		Joint *newRoot=new Joint(*m_rootJoint);
-		newRoot->transform[12]=newRoot->transform[12]+m_addRoots[i];
+		newRoot->transform[12]=newRoot->transform[12]+m_addRoots[i][0];
+		newRoot->transform[13]=newRoot->transform[13]+m_addRoots[i][1];
+		newRoot->transform[14]=newRoot->transform[14]+m_addRoots[i][2];
 		recuJoints(newRoot);
 	}
 }
@@ -109,31 +117,31 @@ void SkeletalModel::drawSkeleton( )
 	
 	for(int i=0;i<m_addRoots.size();i++){
 		Joint *newRoot=new Joint(*m_rootJoint);
-		newRoot->transform[12]=newRoot->transform[12]+m_addRoots[i];
+		newRoot->transform[12]=newRoot->transform[12]+m_addRoots[i][0];
+		newRoot->transform[13]=newRoot->transform[13]+m_addRoots[i][1];
+		newRoot->transform[14]=newRoot->transform[14]+m_addRoots[i][2];
 		recuBones(newRoot);
 	}
 }
 
-void SkeletalModel::recuBones(Joint *joint){
-
-	if(joint->children.size()==0){
-		return;
-	}
+void SkeletalModel::recuBones(Joint *joint){	
 	for (int i=0;i<joint->children.size();i++){
 		m_matrixStack.push(joint->transform);
-		glLoadMatrixf(m_matrixStack.top());
+			glLoadMatrixf(m_matrixStack.top());
 			Matrix4f ct=joint->children[i]->transform;
-			//matriisin viimeinen pystyvektori kertoo translaatiosta
+			//matriisin viimeinen pystyvektori kertoo translaatiosta suhteessa vanhempaan
 			Vector3f offSet=Vector3f(ct[12],ct[13],ct[14]);
 			float l=offSet.abs();
+
 			Vector3f z=offSet.normalized();
 			Vector3f y=Vector3f::cross(z,Vector3f(0,0,1));
 			Vector3f x=Vector3f::cross(y,z);
 			Matrix4f rot; rot.setCol(0,Vector4f(x,0)); rot.setCol(1,Vector4f(y,0));	rot.setCol(2,Vector4f(z,0)); rot.setCol(3,Vector4f(0,0,0,1));
 			m_matrixStack.push(rot*Matrix4f::scaling(.025,.025,l)*Matrix4f::translation(Vector3f(0,0,.5)));
-			glLoadMatrixf(m_matrixStack.top());
-			glutSolidCube(1.f);
+				glLoadMatrixf(m_matrixStack.top());
+				glutSolidCube(1.f);
 			m_matrixStack.pop();
+
 			recuBones(joint->children[i]);
 		m_matrixStack.pop();
 	}

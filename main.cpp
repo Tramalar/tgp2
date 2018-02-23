@@ -61,11 +61,12 @@ int main( int argc, char* argv[] )
 		NUM_JOINTS*3
 	);
 
-    // Run the modeler application.
+    // Run the modeler application.ä
     int ret = ModelerApplication::Instance()->Run();
 
     // This line is reached when you close the program.
     delete ModelerApplication::Instance();
+
 
     return ret;
 }

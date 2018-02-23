@@ -77,7 +77,8 @@ private:
 
 	// pointer to the root joint
 	Joint* m_rootJoint;
-	std::vector<float> m_addRoots;
+	//lis‰t‰‰n tikku-ukkoja annettujen vektoreiden p‰‰h‰n alkuper‰isest‰ ukosta
+	std::vector<Vector3f> m_addRoots;
 	// the list of joints.
 	std::vector< Joint* > m_joints;
 
