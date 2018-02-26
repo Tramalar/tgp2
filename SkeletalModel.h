@@ -77,7 +77,7 @@ private:
 
 	// pointer to the root joint
 	Joint* m_rootJoint;
-	//lis‰t‰‰n tikku-ukkoja annettujen vektoreiden p‰‰h‰n alkuper‰isest‰ ukosta
+	//lis‰t‰‰n tikku-ukkoja annettujen vektoreiden p‰‰h‰n alkuper‰isest‰ ukosta. Lis‰t‰‰n siis vain juurisolmuja, muu saadaan laskettua.
 	std::vector<Vector3f> m_addRoots;
 	// the list of joints.
 	std::vector< Joint* > m_joints;

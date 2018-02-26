@@ -66,6 +66,7 @@ void SkeletalModel::loadSkeleton( const char* filename )
 	m_addRoots.push_back(Vector3f(-.5,0,.5));
 	m_addRoots.push_back(Vector3f(.5,0,-.5));	
 	m_addRoots.push_back(Vector3f(-.5,0,-.5));
+
 	// Load the skeleton from file here.
 }
 
@@ -88,6 +89,7 @@ void SkeletalModel::drawJoints( )
 		newRoot->transform[13]=newRoot->transform[13]+m_addRoots[i][1];
 		newRoot->transform[14]=newRoot->transform[14]+m_addRoots[i][2];
 		recuJoints(newRoot);
+		free(newRoot);
 	}
 }
 
@@ -98,7 +100,6 @@ void SkeletalModel::recuJoints(Joint *joint){
 		glLoadMatrixf(m_matrixStack.top());
 		glutSolidSphere( 0.025f, 12, 12 );
 		m_matrixStack.pop();	
-		return;
 	}
 	for (int i=0;i<joint->children.size();i++){
 		m_matrixStack.push(joint->transform);
@@ -121,6 +122,7 @@ void SkeletalModel::drawSkeleton( )
 		newRoot->transform[13]=newRoot->transform[13]+m_addRoots[i][1];
 		newRoot->transform[14]=newRoot->transform[14]+m_addRoots[i][2];
 		recuBones(newRoot);
+		free(newRoot);
 	}
 }
 
@@ -129,7 +131,6 @@ void SkeletalModel::recuBones(Joint *joint){
 		m_matrixStack.push(joint->transform);
 			glLoadMatrixf(m_matrixStack.top());
 			Matrix4f ct=joint->children[i]->transform;
-			//matriisin viimeinen pystyvektori kertoo translaatiosta suhteessa vanhempaan
 			Vector3f offSet=Vector3f(ct[12],ct[13],ct[14]);
 			float l=offSet.abs();
 
